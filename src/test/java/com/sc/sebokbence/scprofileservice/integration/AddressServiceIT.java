@@ -18,7 +18,7 @@ import org.springframework.web.reactive.function.client.*;
  */
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
-@ActiveProfiles("integration-test")
+@ActiveProfiles("test")
 class AddressServiceIT {
   @Autowired
   AddressService addressService;

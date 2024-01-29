@@ -24,7 +24,7 @@ import org.springframework.test.web.servlet.*;
 @SpringBootTest(classes = ScProfileServiceApplication.class)
 @AutoConfigureMockMvc
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-@ActiveProfiles("integration-test")
+@ActiveProfiles("test")
 class ProfileServiceIT {
   private static final ObjectMapper MAPPER = new ObjectMapper();
 
