@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:~/liquibase
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        format_sql: true
+  liquibase:
+    enabled: true
+    change-log: classpath:db/changelog/db.changelog-master-test.xml
+logging:
+  level:
+    com.sc: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.org.hibernate.type.descriptor.sql.BasicBuilder: TRACE
+services:
+  address:
+    server: http://localhost:8181
+    auth:
+      user: user1
+      password: password1
+    endpoints:
+      getAddress: /address/{id}

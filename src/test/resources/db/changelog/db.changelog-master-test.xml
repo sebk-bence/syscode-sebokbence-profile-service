@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+  http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd
+  http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.8.xsd">
+  <changeSet id="20230125-0" author="Sebok Bence">
+    <createTable tableName="students">
+      <column name="id" type="uuid" autoIncrement="1">
+        <constraints primaryKey="true" primaryKeyName="student_id_pk" />
+      </column>
+      <column name="name" type="varchar(250)"/>
+      <column name="email" type="varchar(250)"/>
+    </createTable>
+  </changeSet>
+  <changeSet id="20230125-1" author="Sebok Bence">
+    <insert tableName="students">
+      <column name="id" valueComputed="uuid()"/>
+      <column name="name" value="Andrew"/>
+      <column name="email" value="andrew@email.com"/>
+    </insert>
+    <insert tableName="students">
+      <column name="id" valueComputed="uuid()"/>
+      <column name="name" value="Ben"/>
+      <column name="email" value="ben@email.com"/>
+    </insert>
+  </changeSet>
+</databaseChangeLog>
