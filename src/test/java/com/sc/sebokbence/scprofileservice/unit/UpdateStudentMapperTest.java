@@ -1,7 +1,6 @@
 package com.sc.sebokbence.scprofileservice.unit;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.*;
 
 import com.sc.sebokbence.scprofileservice.mapper.*;
 import com.sc.sebokbence.scprofileservice.model.entity.*;

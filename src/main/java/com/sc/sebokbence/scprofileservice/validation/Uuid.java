@@ -1,6 +1,6 @@
 package com.sc.sebokbence.scprofileservice.validation;
 
-import static java.lang.annotation.RetentionPolicy.RUNTIME;
+import static java.lang.annotation.RetentionPolicy.*;
 
 import jakarta.validation.*;
 import jakarta.validation.constraints.*;

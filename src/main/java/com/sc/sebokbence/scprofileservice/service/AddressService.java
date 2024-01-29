@@ -1,7 +1,6 @@
 package com.sc.sebokbence.scprofileservice.service;
 
 import com.sc.sebokbence.scprofileservice.config.*;
-import com.sc.sebokbence.scprofileservice.exception.*;
 import com.sc.sebokbence.scprofileservice.model.service.address.*;
 import java.util.*;
 import lombok.*;

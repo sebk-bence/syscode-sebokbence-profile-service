@@ -1,7 +1,7 @@
 package com.sc.sebokbence.scprofileservice.model.entity;
 
-import jakarta.persistence.*;
 import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import java.util.*;
 import lombok.*;
 import org.hibernate.annotations.*;

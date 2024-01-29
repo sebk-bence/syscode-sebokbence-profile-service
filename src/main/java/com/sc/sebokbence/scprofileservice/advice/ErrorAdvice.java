@@ -1,9 +1,6 @@
 package com.sc.sebokbence.scprofileservice.advice;
 
 import com.sc.sebokbence.scprofileservice.exception.*;
-import jakarta.validation.*;
-import java.util.*;
-import java.util.stream.*;
 import org.springframework.http.*;
 import org.springframework.web.bind.*;
 import org.springframework.web.bind.annotation.*;
